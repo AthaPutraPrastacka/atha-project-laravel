@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0279;
+  }
+  
+  #loginForm {
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #b70606;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #loginForm div {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #4c57af;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #5862b0;
+    transition: .5s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e428e;
+    box-shadow: none;
+  }
