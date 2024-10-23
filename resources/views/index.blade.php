@@ -1,75 +1,51 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta charset="UFT-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="widt-device-width,initial-scale=1.0">
-        <title>Portofolio</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freya</title>
+  @vite('resources/css/app.css')
+</head>
+<body class="bg-blue-900 text-white">
+  <header class="py-4 px-6 flex justify-between items-center">
+    <a href="#" class="text-2xl font-bold">Freya</a>
+    <nav class="flex space-x-4">
+      <a href="#" class="hover:text-blue-400">Home</a>
+      <a href="#" class="hover:text-blue-400">About</a>
+      <a href="#" class="hover:text-blue-400">Project</a>
+      <a href="#" class="hover:text-blue-400">Contact</a>
+    </nav>
+  </header>
 
-    <body>
-        
-        <header class="header">
-            <a href="#" class="logo">Freya</a>
+  <main class="container mx-auto py-8 px-6">
+    <section class="flex items-center justify-center h-screen">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold mb-4">Hi, I'm Atha Putra.</h1>
+        <p class="text-xl mb-8">Student Developer</p>
+        <p class="mb-8">Saya adalah Siswa yang masih belajar dalam dunia Percodingan</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Contact</a>
+      </div>
+    </section>
 
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#project">Project</a>
-                <a href="#contact">Contact</a>
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">About</h2>
+      <p>Perkenalkan nama saya adalah Atha Putra Prastacka. Saya adalah Programmer Pemula yang masih belajar tentang dunia percodigan. Saya belajar Coding mulai tahun 2023 di SMK Telkom Purwokerto.</p>
+    </section>
 
-            </nav>
-        </header>
-
-        <section class="home">
-            <div class="home-image">
-                <img src="assets/img/t.png" >
-            </div>
-
-            <div class="home-content">
-                <h1>Hi, I'am Atha Putra.</h1>
-                <h3>Student Developer</h3>
-                <p>Saya adalah Siswa yang masih belajar dalam dunia Percodingan </p>
-
-                <div class="home-sci">
-                    <a href="https://web.facebook.com/atha.putra.9615?locale=id_ID"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/athapp0/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://discordapp.com/users/866271044910055444"><i class="fa-brands fa-discord"></i></a>
-                </div>
-
-                <a href="https://wa.me/6281228953067" class="btn">Contact</a>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="about-content">
-                <h2>About</h2>
-                <p>
-                    Perkenalkan nama saya adalah Atha Putra Prastacka 
-                </p>
-                <p>Saya adalah Programmer Pemula yang masih belajar tentang dunia percodingan. Saya belajar Coding mulai tahun 2023 di SMK Telkom Purwokerto</p>
-            </div>
-        </section>
-        
-        <section class="project">
-            <div class="project-content">
-                <h2>Project</h2>
-                <li href="Profile.html"><div class="project-1"><img src="assets/img/p1.png" width="300" height="200" bor></div></li>
-                <li class="project-2"></li>
-                <li class="project-3"></li>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="contact-content">
-                <i class="fa-solid fa-envelope"></i> 541231025@student-smktelkom-pwt.sch.id
-            <p><i class="fa-brands fa-whatsapp"></i> +62 812-2895-3067</p>
-            <div class="copyright">
-                <p>Copyright@2023</p>
-            </div>
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Project</h2>
+      <div class="place-items-center h-1000px">
+        <div class="bg-blue-500 rounded-lg shadow-lg p-6">
+          <img src="project-image-1.jpg" alt="Project 1" class="mb-4 rounded-lg">
+          <h3 class="text-xl font-bold mb-2">Project 1</h3>
+          <p>Description of Project 1</p>
         </div>
-        </section>
-    </body>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-blue-800 py-4 px-6 text-center">
+    <p>&copy; 2023 Freya. All rights reserved.</p>
+  </footer>
+</body>
 </html>
