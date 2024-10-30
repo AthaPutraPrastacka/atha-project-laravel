@@ -16,7 +16,7 @@
             <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
             <input type="password" name="password" id="password" class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-500" required>
         </div>
-        <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-2 rounded hover:bg-blue-600 transition duration-200">LOGIN</button>
+        <a href="{{ route('home') }}"><button type="submit" class="w-full bg-blue-500 text-white font-semibold py-2 rounded hover:bg-blue-600 transition duration-200">LOGIN</button></a>
     </form>
 
     <script src="assets/js/script.js"></script>

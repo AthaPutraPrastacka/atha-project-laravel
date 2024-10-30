@@ -11,5 +11,8 @@
          About Me!
          </h1>
     </header>
+    <section class="mb-12">
+      <a href="{{ route('home') }}" class="text-3px font-bold mb-4"><h3>←Kembali...</h3></a>
+    </section>
 </body>
 </html>

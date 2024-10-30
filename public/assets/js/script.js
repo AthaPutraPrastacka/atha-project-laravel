@@ -12,7 +12,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event){
     // pengkondisian ketika username dan password benar maupun salah
     if  (username === correctUsername && password === correctPassword) {
         alert("Benerr broo");
-        window.location.href = 'index.html';
+        window.location.href = 'index.blade.php';
     }else{
         alert("Username atau password salah");
     }
