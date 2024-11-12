@@ -30,7 +30,7 @@
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">About</h2>
       <p>Perkenalkan nama saya adalah Atha Putra Prastacka. Saya adalah Programmer Pemula yang masih belajar tentang dunia percodigan. Saya belajar Coding mulai tahun 2023 di SMK Telkom Purwokerto.</p>
-      <a href="{{ route('about') }}" class="text-3px font-bold mb-4"><h3>Baca Selengkapnya.....</h3></a>
+      <a href="{{ route('about') }}" class="text-3pxnonf font-bold mb-4"><h3>Baca Selengkapnya.....</h3></a>
     </section>
 
     <section class="mb-12">
