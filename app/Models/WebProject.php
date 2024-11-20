@@ -10,5 +10,7 @@ class WebProject extends Model
 
     protected $fillable = [
         'name',
+        'description',
+        'photo',
     ];
 }

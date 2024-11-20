@@ -9,6 +9,7 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Illuminate\Support\Facades\Storage;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -23,8 +24,22 @@ class WebProjectResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name'),
-                Forms\Components\TextInput::make('description'),
+                Forms\Components\TextInput::make('name')
+                    ->required()
+                    ->label('Project Name'),
+
+                Forms\Components\TextInput::make('description')
+                    ->label('Description')
+                    ->nullable(),
+
+                Forms\Components\FileUpload::make('photo')
+                    ->label('Project Photo')
+                    ->image()
+                    ->disk('public') // Gunakan disk 'public'
+                    ->directory('photos') // Simpan di folder 'photos'
+                    ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/jpg', 'image/gif', 'image/svg'])
+                    ->required(),
+                
             ]);
     }
 
@@ -32,8 +47,19 @@ class WebProjectResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')->searchable(),
-                Tables\Columns\TextColumn::make('description'),
+                Tables\Columns\TextColumn::make('name')
+                    ->searchable()
+                    ->label('Project Name'),
+
+                Tables\Columns\TextColumn::make('description')
+                    ->label('Description'),
+
+                Tables\Columns\ImageColumn::make('photo')
+                    ->label('Photo')
+                    ->disk('public') // Menggunakan disk storage 'public'
+                    ->size(50), // Ukuran gambar
+                
+            
             ])
             ->filters([
                 //
